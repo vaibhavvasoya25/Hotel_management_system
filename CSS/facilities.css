@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 0 2px 2px #000000;
+    font-family: 'Cinzel', serif;
+    text-transform: capitalize;
+    padding-top: 350px;
+}
+
+.heading-1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.imgback {
+    background-image: url('../img/facilities.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Edu SA Beginner', cursive;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    justify-content: center;
+    font-family: cursive;
+    vertical-align: baseline;
+    font-weight: 700;
+}
+
+.tittle {
+    margin: 30px;
+}

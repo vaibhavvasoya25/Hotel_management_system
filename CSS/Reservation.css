@@ -119,6 +119,8 @@ h1 {
 .Data-input {
     border: 2px solid rgb(32, 12, 12);
     border-radius: 5px;
+    font-family: 'Cinzel', serif;
+    color: black;
 }
 
 #form-reg {
@@ -132,13 +134,15 @@ h1 {
 
 .btn-reg {
     /* display: flex; */
-    width: 90px;
+    width: 170px;
     height: 30px;
     border: 2px solid black;
     border-radius: 4px;
     background-color: rgb(136, 231, 136);
     justify-content: center;
     align-items: center;
+    font-weight: bold;
+    font-family: 'Cinzel';
 }
 
 .btn-reg:hover {
