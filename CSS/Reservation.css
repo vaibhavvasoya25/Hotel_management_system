@@ -97,16 +97,18 @@ a {
 
 body {
     background-image: url("../img/register.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+}
+
+.frm-back {
+    background-image: url("../img/register.jpg");
+    /* opacity: 0.2; */
 }
 
 .Register {
     border: 2px solid black;
     width: 600px;
     margin: 20px auto;
+    /* background-image: url("../img/register.jpg"); */
 }
 
 h1 {
