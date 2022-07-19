@@ -1,0 +1,218 @@
+    /* css reset */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+     :root {
+        --navbar-height: 30px;
+    }
+    /* Navigation Bar */
+    
+    .book-btn a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    #navbar {
+        display: flex;
+        position: relative;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #navbar::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(56, 53, 53);
+        z-index: -1;
+        opacity: 1.70;
+    }
+    /* Logo and Image */
+    
+    #logo {
+        margin-left: 25px;
+        font-family: 'Cinzel', serif;
+        font-size: 1.50rem;
+        font-weight: bold;
+        color: white;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    #logo h3 a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .img-logo {
+        /* position: fixed; */
+        /* margin-top: 5px; */
+        padding-left: 50px;
+        margin: 0;
+    }
+    
+    #logo img {
+        height: 50px;
+        left: 20px;
+    }
+    /* List styling */
+    
+    #navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #navbar ul li {
+        list-style: none;
+        font-size: 20px;
+        font-family: serif;
+    }
+    
+    #navbar ul li a {
+        display: block;
+        padding: 3px 10px;
+        margin: 3px 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: rgb(230, 222, 222);
+    }
+    
+    #navbar ul li a:hover {
+        color: white;
+    }
+    /* heading and button section  */
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 400px;
+        padding: 0px 200px;
+        align-items: center;
+    }
+    
+    .container::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.40;
+    }
+    
+    .btn {
+        width: 100px;
+        height: 30px;
+        border-radius: 3px;
+        background-color: rgb(165, 159, 255);
+        border: 3px solid black;
+    }
+    
+    .btn:hover {
+        background-color: rgb(233, 141, 145);
+        cursor: pointer;
+    }
+    
+    .p1 {
+        line-height: 25px;
+    }
+    
+    .p2 {
+        line-height: 50px;
+    }
+    
+    h1 {
+        font-size: 40px;
+        font-family: 'Cinzel', serif;
+    }
+    
+    .book-btn {
+        align-items: center;
+        background-color: #a4ff9b;
+        border: 2px solid black;
+        border-radius: 8px;
+        box-sizing: border-box;
+        color: black;
+        cursor: pointer;
+        display: flex;
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        height: 48px;
+        /* justify-content: center; */
+        line-height: 24px;
+        max-width: 100%;
+        padding: 0 25px;
+        position: relative;
+        /* text-align: center;   */
+        touch-action: manipulation;
+    }
+    
+    .book-btn:after {
+        background-color: #111;
+        border-radius: 8px;
+        content: "";
+        display: block;
+        height: 48px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        top: -2px;
+        transform: translate(8px, 8px);
+        transition: transform .5s ease-out;
+        z-index: -1;
+    }
+    
+    .book-btn:hover:after {
+        transform: translate(0, 0);
+    }
+    
+    .book-btn:active {
+        background-color: #fa5b4a;
+    }
+    
+    .book-btn:hover {
+        outline: 0;
+    }
+    
+    @media (min-width: 60px) {
+        .book-btn {
+            padding: 0 40px;
+        }
+    }
+    
+    .footer-content {
+        position: absolute;
+        background-color: #000;
+        height: 300px;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .footer-content h1 {
+        font-size: 1.5rem;
+        margin: 10px 25px;
+        max-width: 400px;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    } */
+    /* .footer-content ul {
+        color: white;
+    }
+    
+    .footer-content p {
+        color: white;
+    } */

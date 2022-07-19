@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hotel Booking Section</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Macondo&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../CSS/Reservation.css">
+
+
+</head>
+
+<body>
+
+    <section>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="../img/Royal-Crown.png" class="img-logo" alt="Logo">
+                <h3><a href="../index.html">Royal Crown</a></h3>
+
+            </div>
+            <div>
+                <ul>
+                    <li class="item"><a href="../index.html">Home</a></li>
+                    <li class="item"><a href="#about_us">About us</a></li>
+                    <li class="item"><a href="../Facilities.html">Facilities</a></li>
+                    <li class="item"><a href="#">Reservation</a></li>
+                    <li class="item"><a href="#">Photo gallery</a></li>
+                    <li class="item"><a href="#">Contact us</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="Register">
+            <form id="form-reg" method="post">
+                <h1>Registration</h1>
+
+                <input type="text" name="Username" class="Data-input" placeholder="Username*"><br><br>
+                <input type="text" name="E-mail" class="Data-input" placeholder="Enter your Email address"><br><br>
+
+                <input type="number" name="MobileNumber" class="Data-input" placeholder="Mobile no."><br><br>
+
+                <input type="text" name="City" class="Data-input" placeholder="City"><br><br>
+
+                <input type="date" name="Check-in date" class="Data-input">
+                <input type="date" name="Check-Out date" class="Data-input"><br><br>
+
+                <input type="number" placeholder="No. of person" class="Data-input"><br><br>
+
+                <select name="rooms" class="room-booking">
+                    <option value="How many rooms?">How many rooms?</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                   
+                </select><br><br>
+
+                <select name="type" class="room-type">
+                    <option value="Room type?">Room type?</option>
+                    <option value="Deluxe">Deluxe</option>
+                    <option value="Super delux">Super delux</option>
+                    <option value="Super deluxe lake facing">Super deluxe lake facing</option>
+                    
+                   
+                </select><br><br>
+
+                <button type="Submit" class="btn-reg" value="Register">Register</button>
+
+
+
+        </div>
+        </form>
+    </section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ :root {
+    --navbar-height: 30px;
+}
+
+
+/* Navigation Bar */
+
+.book-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+#navbar {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#navbar::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(56, 53, 53);
+    z-index: -1;
+    opacity: 1.7;
+}
+
+
+/* Logo and Image */
+
+#logo {
+    margin-left: 25px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.50rem;
+    font-weight: bold;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo h3 a {
+    text-decoration: none;
+    color: white;
+}
+
+.img-logo {
+    /* position: fixed; */
+    /* margin-top: 5px; */
+    padding-left: 50px;
+    margin: 0;
+}
+
+#logo img {
+    height: 50px;
+    left: 20px;
+}
+
+
+/* List styling */
+
+#navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 20px;
+    font-family: serif;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 10px;
+    margin: 3px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(230, 222, 222);
+}
+
+#navbar ul li a:hover {
+    color: white;
+}
+
+body {
+    background-image: url("../img/register.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.Register {
+    border: 2px solid black;
+    width: 600px;
+    margin: 20px auto;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Data-input {
+    border: 2px solid rgb(32, 12, 12);
+    border-radius: 5px;
+}
+
+#form-reg {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-image: url("");
+}
+
+.btn-reg {
+    /* display: flex; */
+    width: 90px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: rgb(136, 231, 136);
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-reg:hover {
+    background-color: rgb(241, 34, 7);
+}
+
+.room-booking {
+    border: 2px solid rgb(32, 12, 12);
+    border-radius: 4px;
+}
+
+.room-type {
+    border: 2px solid rgb(32, 12, 12);
+    border-radius: 4px;
+}
