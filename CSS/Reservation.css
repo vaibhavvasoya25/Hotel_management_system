@@ -97,11 +97,10 @@ a {
 
 body {
     background-image: url("../img/register.jpg");
-}
-
-.frm-back {
-    background-image: url("../img/register.jpg");
-    /* opacity: 0.2; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 50vh; */
 }
 
 .Register {
@@ -131,7 +130,6 @@ h1 {
     align-items: center;
     padding: 10px;
     box-sizing: border-box;
-    background-image: url("");
 }
 
 .btn-reg {
