@@ -37,3 +37,48 @@ p {
 .tittle {
     margin: 50px;
 }
+
+.icon_box {
+    padding: 20px 6px;
+    outline: 1px dashed silver;
+    font-size: 14px;
+    font-weight: 600;
+    color: #780124;
+    background: #fff;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    position: relative;
+    box-sizing: inherit;
+    height: 175px;
+    width: 200px;
+    padding-top: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: inline;
+    vertical-align: baseline;
+    margin: 10px;
+}
+
+.facilities-pro {
+    display: flex;
+    margin: auto;
+    margin-left: 150px;
+}
+
+.facilities-pro2 {
+    display: flex;
+    margin: auto;
+    margin-left: 150px;
+}
+
+.facilities-pro3 {
+    display: flex;
+    margin: auto;
+    margin-left: 150px;
+}
+
+.facilities-pro4 {
+    display: flex;
+    margin: auto;
+    margin-left: 150px;
+}

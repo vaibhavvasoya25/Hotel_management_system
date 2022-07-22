@@ -1,4 +1,4 @@
-h2 {
+.end-tittle {
     text-align: center;
     font-size: 30px;
     text-shadow: 0 2px 2px #000000;
@@ -43,12 +43,61 @@ h2 {
     margin-left: 500px;
 }
 
-.row {
-    margin-top: 200px;
-    margin-left: 250px;
-}
-
 .f1 {
     background-color: white;
     color: black;
+}
+
+.col-sm-6col-md-3item2 {
+    margin-left: 200px;
+}
+
+.container-2 {
+    margin: auto;
+    max-width: 1120px;
+    height: 350px;
+}
+
+.icon_1 {
+    /* padding: 25px; */
+    background-color: rgb(236, 157, 9);
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.contact_A,
+.contact_B,
+.contact_c {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.num {
+    font-size: 18px;
+}
+
+.address {
+    margin-left: 325px;
+    margin-top: -125px;
+}
+
+.mail {
+    text-align: center;
+    margin-right: -500px;
+    margin-top: -125px;
 }

@@ -1,5 +1,5 @@
 .img {
-    background-image: url('../img/photo-gallery.jpg');
+    background-image: url('/img/photo-gallery.jpg');
     height: 75vh;
     background-position: center;
     background-size: cover;
@@ -21,9 +21,13 @@ h2 {
     font-size: 3rem;
 }
 
+.gallery {
+    margin: 50px;
+}
+
 h1 {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 150px;
     font-family: 'Cinzel';
 }
 
