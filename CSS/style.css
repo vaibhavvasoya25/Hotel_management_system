@@ -11,6 +11,52 @@
     }
     /* Navigation Bar */
     
+    .item-ul {
+        display: flex;
+    }
+    
+    .direction-column {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hamburger {
+        position: absolute;
+        top: 25px;
+        right: 15px;
+    }
+    
+    .hamburger span {
+        display: none;
+        border-radius: 1px;
+        width: 15px;
+        background-color: #fff;
+        height: 2px;
+        margin-bottom: 3px;
+        margin-right: 20px;
+    }
+    
+    @media screen and (max-width: 770px) {
+        .hamburger span {
+            display: block;
+        }
+        #navbar div .item-ul {
+            display: none;
+            flex-direction: column;
+        }
+    }
+    
+    @media screen and (min-width: 770px) {
+        .hamburger span {
+            display: none;
+        }
+        #navbar div .item-ul {
+            display: flex;
+            flex-direction: row;
+            /* background-color: white; */
+        }
+    }
+    
     .book-btn a {
         text-decoration: none;
         color: black;
