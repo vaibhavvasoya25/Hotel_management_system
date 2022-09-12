@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +9,7 @@
     <title> Hotel Booking Section</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Macondo&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="./CSS/home.css">
     <link rel="stylesheet" href="CSS/Reservation.css">
 
 
@@ -21,15 +22,15 @@
         <nav id="navbar">
             <div id="logo">
                 <img src="./img/Royal-Crown.png" class="img-logo" alt="Logo">
-                <h3><a href="../index.html">Royal Crown</a></h3>
+                <h3><a href="./index.php">Royal Crown</a></h3>
 
             </div>
             <div>
                 <ul>
-                    <li class="item"><a href="../index.html">Home</a></li>
+                    <li class="item"><a href="./index.php">Home</a></li>
                     <li class="item"><a href="./about.html">About us</a></li>
-                    <li class="item"><a href="../Facilities.html">Facilities</a></li>
-                    <li class="item"><a href="./Reservation.html">Reservation</a></li>
+                    <li class="item"><a href="./Facilities.html">Facilities</a></li>
+                    <li class="item"><a href="./Reservation.php">Reservation</a></li>
                     <li class="item"><a href="./photo-gallery.html">Photo gallery</a></li>
                     <li class="item"><a href="./contact.html">Contact us</a></li>
                 </ul>
@@ -45,10 +46,9 @@
 
 
     <section>
-        <form id="form-reg" action="get-data.php" method="POST" class="frm-back">
-
+        <form id="form-reg"  method="POST" class="frm-back" action="/get-data.php">
+        <!-- <form id="form-reg"  method="POST" class="frm-back" action="/get-data.php"> -->
             <div class="Register">
-
                 <div class="row">
                     <div class="col">
                         <input type="text" name="firstname" class="form-control" placeholder="First name" aria-label="First name">
@@ -57,7 +57,6 @@
                         <input type="text" name="lastname" class="form-control" placeholder="Last name" aria-label="Last name">
                     </div>
                 </div><br>
-
                 <div class="row">
                     <div class="col">
                         <input class="form-control" name="email" placeholder="E-mail"></input>
@@ -69,16 +68,10 @@
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
-                            <option value="5">                 
-                            </option>
+                            <option value="5">5</option>
                         </select>
                     </div>
-
                 </div><br>
-
-
-
-
                 <div class="row">
                     <div class="col-md-6">
                         <input class="form-control" name="mobilenumber" type="number" placeholder="Mobile Number"></input>
@@ -104,9 +97,7 @@
 
 
                 <div class="col-12">
-                    <button type="submit" value="submit" name="submit" class="btn-book"> Book Now </button>
-
-
+                    <button type="submit" value="submit"  name="submit"  class="btn-book"> Book Now </button>
                 </div>
 
             </div>
@@ -161,12 +152,19 @@
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js "></script>
+    <script src="./babanirala.js"></script>
+
+
+
 
     <script>
-        function myfun() {
-            alert("Your booking is Sucessfully Done! ");
-        }
+        // function myfunction() {
+        //     alert("Your booking is Sucessfully Done! ");
+
+            
+        // }
     </script>
+
 
 </body>
 

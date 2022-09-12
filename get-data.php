@@ -4,9 +4,8 @@ ini_set('display_errors', 1);
 
 ?>
 
-
 <?php
-
+echo "Hello";
 $servername = 'localhost';
 $username = 'root';
 $password = '';
@@ -16,11 +15,11 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
+    
 }
-// print_r($conn);
+
 if (isset($_POST['submit'])) {
-
-
+    var_dump("hiii");die;
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
     $email = $_POST['email'];
@@ -30,28 +29,21 @@ if (isset($_POST['submit'])) {
     $checkindate = $_POST['checkindate'];
     $checkoutdate = $_POST['checkoutdate'];
 
-    // echo $checkindate;
-    // $checkindate = strtotime($checkindate);
-    // echo $checkoutdate;
-    // $checkoutdate = strtotime($checkoutdate);
-   
-
-    //   var_dump($checkindate);
-
-
-
-    $sql = "INSERT INTO `Guests`(`firstname`, `lastname`, `email`, `rooms`, `person`, `mobilenumber`, `checkindate`,`checkoutdate`) VALUES ('$firstname','$lastname','$email','$rooms','$person','$mobilenumber', '$checkindate', '$checkoutdate')";
+        $sql = "INSERT INTO `Guests`(`firstname`, `lastname`, `email`, `rooms`, `person`, `mobilenumber`, `checkindate`,`checkoutdate`) VALUES ('$firstname','$lastname','$email','$rooms','$person','$mobilenumber', '$checkindate', '$checkoutdate')";
 
 
     if (mysqli_query($conn, $sql)) {
-        header("Location: http://localhost/welcome_management/Reservation.html");
+        echo "New record has been added successfully !";
+        // header("Location: http://localhost/welcome_site/Resevation.php");
+        // exit();
+        
     } else {
         echo "Error: " . $sql .  mysqli_error($conn);
     }
     mysqli_close($conn);
-
+    // header('Location: abcd.com');
+    
 }
-
 
 
 ?>
