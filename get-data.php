@@ -19,7 +19,7 @@ if ($conn->connect_error) {
 }
 
 if (isset($_POST['submit'])) {
-    var_dump("hiii");die;
+    // var_dump("hiii");die;
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
     $email = $_POST['email'];
@@ -29,13 +29,15 @@ if (isset($_POST['submit'])) {
     $checkindate = $_POST['checkindate'];
     $checkoutdate = $_POST['checkoutdate'];
 
-        $sql = "INSERT INTO `Guests`(`firstname`, `lastname`, `email`, `rooms`, `person`, `mobilenumber`, `checkindate`,`checkoutdate`) VALUES ('$firstname','$lastname','$email','$rooms','$person','$mobilenumber', '$checkindate', '$checkoutdate')";
+        $sql = "INSERT INTO `Guests`(`firstname`, `lastname`, `email`, `rooms`, `person`, `mobilenumber`, `checkindate`,`checkoutdate`)
+        
+         VALUES ('$firstname','$lastname','$email','$rooms','$person','$mobilenumber', '$checkindate', '$checkoutdate')";
 
 
     if (mysqli_query($conn, $sql)) {
         echo "New record has been added successfully !";
-        // header("Location: http://localhost/welcome_site/Resevation.php");
-        // exit();
+        header("Location: http://localhost/welcome_management/index.html");
+        exit();
         
     } else {
         echo "Error: " . $sql .  mysqli_error($conn);

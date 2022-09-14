@@ -46,7 +46,7 @@
 
 
     <section>
-        <form id="form-reg"  method="POST" class="frm-back" action="/get-data.php">
+        <form id="form-reg"  method="POST" class="frm-back" action="./get-data.php">
         <!-- <form id="form-reg"  method="POST" class="frm-back" action="/get-data.php"> -->
             <div class="Register">
                 <div class="row">

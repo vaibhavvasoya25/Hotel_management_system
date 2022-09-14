@@ -94,7 +94,7 @@
 
             <p class="para">To pamper the guests with ultimate comfort, luxury and pleasure, We offer multifarious amenities, rooftop restaurant & services. Royal Crown is one of the best budget homestay in Surat having all modern amenities.</p>
 
-            <button class="book-btn" role="button"><a href="./Reservation.html"> Book Now </a></button>
+            <button class="book-btn" role="button"><a href="./Reservation.php"> Book Now </a></button>
         </div>
     </section><br><br><br><br><br><br><br>
 
